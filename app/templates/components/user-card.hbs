@@ -1,0 +1,21 @@
+{{#user-pagination paginateBy=9 items=user as |user|}}
+    <div class="cardbody">
+        <div class="cards">
+            {{#each user as |people|}}
+            <div class="innerbox">
+                <div class='icon-container'>
+                    <img src="{{people.avatar}}" class="cardavatar"/>
+                    {{#if (eq people.status "active")}}
+                    <div class='status-circle'></div>
+                    {{/if}}
+                </div>
+                <div class="cardElements">
+                    <p>Name:{{people.name}}</p>
+                    <p>Email:{{people.email}}</p>
+                    <p>Phone:{{people.phone}}</p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+{{/user-pagination}}

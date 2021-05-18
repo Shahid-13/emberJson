@@ -1,0 +1,11 @@
+{{#if model.users.isFulfilled}}
+    {{#list-filter filter=model.users as |users|}}
+        {{#user-pagination paginateBy=5 items=users as |user|}}
+            {{user-table users = user}}
+        {{/user-pagination}}
+    {{/list-filter}}
+{{else}}
+    Loading...
+{{/if}}
+
+

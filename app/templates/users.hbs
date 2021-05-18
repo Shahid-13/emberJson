@@ -1,0 +1,13 @@
+<div class="body">
+    {{#link-to "users.newuser"}}
+    <button class="button">Add User</button>
+    {{/link-to}}
+    {{#link-to "users.index" }}
+    <input type ="button" value="Table" class="button">
+    {{/link-to}}
+    {{#link-to "users.card" }}
+    <input type ="button" value="Card" class="button">
+    {{/link-to}}
+</div>
+
+{{outlet}}

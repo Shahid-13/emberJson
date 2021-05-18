@@ -1,0 +1,417 @@
+table, td, th {  
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th{
+    background-color:grey;
+    color: floralwhite;
+}
+td{
+    background-color: honeydew;
+}
+
+.button{
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 0;
+    color: white;
+    padding: 12px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.avatar{
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.editbtn{
+    background-color: #e46f08;
+    border: none;
+    border-radius: 0;
+    color: white;
+    padding: 12px 37px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.deletebtn{
+    background-color: #e40808;
+    border: none;
+    border-radius: 0;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.green{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(78, 206, 19);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red{
+    height: 20px;
+    width: 20px;
+    background-color: rgb(235, 20, 20);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.cardElements{
+    margin-left: 10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.innerbox{
+    display: flex;
+    padding: 20px;
+    width: 380px;
+    /* border: 1px solid black; */
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 16px;
+    /* flex-direction: row; */
+}
+
+.searchbox{
+    width: 480px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 12px 20px;
+    display: inline;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    /* align-items: center; */
+    flex-direction: row;
+    /* background-image: url(downd.jpg); */
+   
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100%; */
+}
+
+.tablebody{
+    font-family: Arial, Helvetica, sans-serif;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.status-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(78, 206, 19);
+    border: 2px solid white;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+  }
+
+.icon-container {
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+
+.cardavatar {
+    height: 105%;
+    width: 103%;
+    border-radius: 50%;
+  }
+
+.inneravatar{
+    width: 11%;
+}
+
+.pagination{
+    display: flex;
+    justify-content: center;
+}
+/* form */
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+
+/* details */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.buttonn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  /* font-size: 22px; */
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+
+.delText{
+  color:  #03e9f4;
+  font-size: 20px;
+}
+
+.indeletebtn{
+  background-color: #e40808;
+    border: none;
+    border-radius: 0;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.incancelbtn{
+  background-color: #5da7ad;
+    border: none;
+    border-radius: 0;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.delmodal{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+

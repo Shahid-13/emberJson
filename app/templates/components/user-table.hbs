@@ -1,0 +1,61 @@
+<div class="tablebody">
+    <div>
+            
+        <table>
+            <tr>
+                <th>Avatar</th>
+                <th>Name</th>
+                <th>E-mail</th>
+                <th>Phone</th>
+                <th>Role</th>
+                <th>Edit/Delete</th>
+            </tr>
+            {{#each users as |people|}}
+            <tr>
+                <td class="inneravatar">
+                    <div class='icon-container'>                           
+                        <img src="{{people.avatar}}" class="avatar"/>
+                            
+                        {{#if (eq people.status "active")}}
+                            <div class='status-circle'></div>
+                        {{/if}}
+                            
+                    </div>                           
+                </td>
+                <td>{{#link-to "users.details" people}}{{people.name}}{{/link-to}}</td>
+                <td>{{people.email}}</td>
+                <td>{{people.phone}}</td>
+                <td>{{people.role}}</td>
+                <td>
+                    <input type ="button" value="Edit" class="editbtn" onClick={{action this.editUser people}}><br>
+                            
+                    <input type ="button" value="Delete" class="deletebtn" onClick={{action this.deleteId people}}>
+                </td>                  
+            </tr>
+            {{!-- {{people.post}} --}}
+            {{!-- {{task}} --}}
+            {{/each}}
+        </table>            
+    </div>
+</div>
+
+           
+
+{{#if edituser}}
+    {{edit-user people = user}}
+{{/if}}
+
+{{#if deleteid}}
+    <div class="login-box">
+        <div class="delmodal">
+            <div>
+                <p class="delText">Delete Conformation!?</p><br>
+                <input type="button" value="Delete" class="indeletebtn" onClick={{action deleteuser deleteItem}}/>
+                <input type="button" value="Cancel" class="incancelbtn" onClick={{action cancel}}/>
+            </div>
+        </div>
+    </div>
+{{/if}}
+
+  
+ 

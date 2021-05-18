@@ -1,0 +1,34 @@
+
+
+<div class="login-box">
+  <h2>Edit Info</h2>
+  <form >
+    <div class="user-box">
+      {{input type="text" name="name" value=people.name }}
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      {{input type="email" name="email" value=people.email}}
+      <label>Email</label>
+    </div>
+    <div class="user-box">
+      {{input type="text" name="phone" value=people.phone}}
+      <label>Phone</label>
+    </div>
+    <div class="user-box">
+      {{input type="text" name="address" value=people.address}}
+      <label>Address</label>
+    </div>
+    <div class="user-box">
+        {{input type="text" name="address" value=people.role}}
+        <label>Role</label>
+    </div>
+    <div class="user-box">
+      {{input type="checkbox" name="isActive" checked=people.is_active}}
+      <label>isActive</label>
+    </div>
+    
+    <br><br>
+    <button class="button" onClick={{action this.handleEdit people}}>Submit</button>
+  </form>
+</div>

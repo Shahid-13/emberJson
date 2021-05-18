@@ -1,0 +1,20 @@
+{{yield paginatedItems}}
+<div class="pagination">
+    <div>
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+                {{#if showPrevious}}
+                    <button type="button" class="btn btn-secondary" {{action "previousClicked"}}>{{previousText}}</button>
+                {{/if}}
+                
+                {{#each pageNumbers as |pageNumber|}}
+                    <button type="button" class="btn btn-secondary" {{action "pageClicked" pageNumber}}>{{pageNumber}}</button>
+                {{/each}}
+                {{#if showNext}}
+                    <button type="button" class="btn btn-secondary" {{action "nextClicked"}}>{{nextText}}</button>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>
+ 

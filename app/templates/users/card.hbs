@@ -1,0 +1,7 @@
+{{#if model.users.isFulfilled}}
+    {{#list-filter filter=model.users as |users|}}
+        {{user-card user = users}}
+    {{/list-filter}}
+{{else}}
+    Loading...
+{{/if}}
