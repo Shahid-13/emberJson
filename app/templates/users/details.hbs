@@ -1,11 +1,16 @@
-<div>
+<div class="details">
   <div class="card">
-    <img src="{{model.avatar}}"  style="width:100%">
-    <h3>{{model.name}}</h3>
-    <p class="title">Role:{{model.role}}</p>
-    <p>{{model.email}}</p>
-    <p>{{model.address}}</p>
-    <p><button class="buttonn">{{model.phone}}</button></p>
+    <img src="{{model.user.avatar}}"  style="width:100%">
+    <h3>{{model.user.name}}</h3>
+    <p class="title">Role:{{model.user.role}}</p>
+    <p>{{model.user.email}}</p>
+    <p>{{model.user.address}}</p>
+    <p><button class="buttonn">{{model.user.phone}}</button></p>
   </div>
-  {{!-- <p>{{model.task}}</p> --}}
+  <div >
+  {{user-post posts=model.user.posts}}
+  </div>
+  <div class=>
+  {{user-task tasks=model.user.tasks}}
+  </div>
 </div>

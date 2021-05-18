@@ -340,9 +340,9 @@ td{
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
-  margin: auto;
   text-align: center;
   font-family: arial;
+  margin: 30px 30px;
 }
 
 .title {
@@ -415,3 +415,9 @@ button:hover, a:hover {
   text-align: center;
 }
 
+.details{
+  display: flex;
+  margin-left: 10%;
+  margin-right: 20px;
+  /* justify-content: center; */
+}

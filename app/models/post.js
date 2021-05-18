@@ -4,8 +4,7 @@ const {
 } = DS
 export default DS.Model.extend({
     created_at: attr('string'),
-    owner: DS.belongsTo('user', { inverse: 'post' }),
+    owner: DS.belongsTo('user'),
     image: attr('string'),
     captions: attr('string'),
-    // like: DS.hasMany('user'),
 });

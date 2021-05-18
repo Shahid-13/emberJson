@@ -16,6 +16,6 @@ export default DS.Model.extend({
     status: computed('is_active',function(){
         return get(this, 'is_active') ? 'active' : 'inactive'
     }),
-    post: DS.hasMany('post', { polymorphic: true }),
-    task: DS.hasMany('task'),
+    posts: DS.hasMany('post'),
+    tasks: DS.hasMany('task'),
 });

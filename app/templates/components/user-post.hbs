@@ -1,0 +1,9 @@
+<h3> Posts : </h3>
+{{#if posts.length}}
+    {{#each posts as |post|}}
+    <img src="{{post.image}}"  style="width:50%">
+    <h4> Caption : {{post.captions}}</h4>
+    {{/each}}
+{{else}}
+<h3>No Post Yet..</h3>
+{{/if}}
